@@ -42,6 +42,7 @@ public class Customer implements Comparable<Customer> {
     public int compareTo(Customer other) {
         return order - other.order;
     }
+
 }
 
 class SortCustomerByOrder implements Comparator<Customer>{

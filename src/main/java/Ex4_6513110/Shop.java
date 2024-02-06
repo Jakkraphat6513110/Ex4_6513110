@@ -64,9 +64,11 @@ class Shop {
             }
             Failpack.clear();
                 
-
+            Customer data;
             if(day %2 == 0){
-                System.out.println("Billing    >> " + billingQueue.pollFirst());
+                while((data = billingQueue.pollFirst()) != null)
+                    System.out.println("Billing    >> " + data.getID());
+                
             }
             System.out.println();
 
