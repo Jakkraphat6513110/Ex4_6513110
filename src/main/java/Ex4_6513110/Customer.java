@@ -34,6 +34,10 @@ public class Customer implements Comparable<Customer> {
         return String.format("[Customer : %d      Order : %d]",ID,order);   
     }
 
+    public void print(){
+        System.out.printf("[Customer : %d      Order : %d]\n",ID,order);
+    }
+
     @Override
     public int compareTo(Customer other) {
         return order - other.order;
